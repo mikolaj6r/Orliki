@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/addReserv"
+    tools:context=".AddReservation">
+
+
+    <TextView
+        android:id="@+id/ktoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kto rezerwuje" />
+
+    <EditText
+        android:id="@+id/ktoInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="kto" />
+
+    <TextView
+        android:id="@+id/kiedyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiedy" />
+
+    <EditText
+        android:id="@+id/kiedyInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:inputType="datetime"
+        android:text="kiedy" />
+
+    <TextView
+        android:id="@+id/ileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Na jak długo ( max 2 godziny )" />
+
+    <EditText
+        android:id="@+id/ileInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="ile" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:elevation="@dimen/fab_margin"
+        android:text="Zapisz"
+        android:onClick="sendClicked"/>
+
+</LinearLayout>
